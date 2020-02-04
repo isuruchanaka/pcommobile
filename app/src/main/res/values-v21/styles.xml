@@ -1,0 +1,94 @@
+<resources>
+
+
+
+
+    <dimen name="bar_height">50</dimen>
+    <dimen name="bar_text_size">40</dimen>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <!-- Original AppCompat attributes. -->
+        <!--Action bar style-->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <item name="android:actionMenuTextColor">#0F0F0F</item>
+        <!-- for appcompat-->
+        <item name="actionMenuTextColor">#0C0C0C</item>
+
+
+
+        <item name="colorPrimary">#FFFF9800</item>
+        <item name="colorPrimaryDark">#FFFF9800</item>
+        <item name="colorSecondary">#030407</item>
+
+        <item name="colorError">#FFFF9800</item>
+        <item name="colorControlNormal">#020202</item>
+        <item name="colorControlActivated">#020202</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorPrimaryVariant">#FFFF9800</item>
+        <item name="colorSecondaryVariant">#FFC107</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnPrimary">#0ADD03</item>
+        <!--        <item name="colorOnSecondary">#27DFA5</item>-->
+        <item name="colorOnBackground">#FFFF9800</item>
+        <!--        <item name="colorOnError">#000000</item>-->
+        <item name="colorOnSurface">#0E0E0E</item>
+        <item name="scrimBackground">#4CE400</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:height">@dimen/bar_height</item>
+        <item name="height">@dimen/bar_height</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_text_size</item>
+        <item name="android:textColor">@color/album_title</item>
+    </style>
+    <color name="background">#FAFAFA</color>
+    <style name="Theme.MaterialComponents.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.MaterialComponents.Light"/>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#FF5722</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#673AB7</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#DCE75E5E</item>
+    </style>
+
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+</resources>

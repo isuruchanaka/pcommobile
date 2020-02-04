@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="qr_code_reader_square">#FFFFFFFF</color>
+    <color name="colorPrimary">#4F8640</color>
+    <color name="colorPrimaryDark">#FF9800</color>
+    <color name="colorAccent">#8FAA2E</color>
+    <color name="colorAccent1">#EAF4FF</color>
+    <color name="colorAccent2">#FFFF9800</color>
+    <color name="year">#FFFF9800</color>
+    <color name="year2">#2196F3</color>
+    <color name="title">#FFFFFF</color>
+    <color name="genre1">#F8F8F8</color>
+    <color name="white">#000000</color>
+    <color name="grey">#FFFF9800</color>
+    <color name="black">#000000</color>
+    <color name="green">#0f0</color>
+    <color name="album_title">#4C4C4C</color>
+    <color name="button_background_color">#992255</color>
+    <color name="viewBg">#F1F5F8</color>
+
+</resources>

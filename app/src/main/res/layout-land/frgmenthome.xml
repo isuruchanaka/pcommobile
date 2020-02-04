@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frgmenthome">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frgmenthome">
+
+
+    <androidx.appcompat.widget.SearchView
+
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.029"
+        app:queryHint="Search Sites"
+        app:submitBackground="@drawable/bg_button" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="376dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/newlogo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:src="@drawable/sites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:src="@drawable/sps"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@+id/imageView5">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

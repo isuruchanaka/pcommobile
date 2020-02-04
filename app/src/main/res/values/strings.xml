@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--<string name="default_web_client_id" translatable="false">298065623232-k028eojb9ov51q402v6iebnau90n076u.apps.googleusercontent.com</string>-->
+    <!--<string name="firebase_database_url" translatable="false">https://allgon.firebaseio.com</string>-->
+    <!--<string name="gcm_defaultSenderId" translatable="false">298065623232</string>-->
+    <!--<string name="google_api_key" translatable="false">AIzaSyAfU0Tu0tJ96C-VaZPVKzsNVFc1MmzPZZA</string>-->
+    <!--<string name="google_app_id" translatable="false">1:298065623232:android:a2dd5f6a537b3940</string>-->
+    <!--<string name="google_crash_reporting_api_key" translatable="false">AIzaSyAfU0Tu0tJ96C-VaZPVKzsNVFc1MmzPZZA</string>-->
+    <!--<string name="google_storage_bucket" translatable="false">allgon.appspot.com</string>-->
+    <!--<string name="project_id" translatable="false">allgon</string>-->
+    <string name="primary" translatable="false">allgon</string>
+    <string name="subtext" translatable="false">allgon</string>
+    <string name="app_name">PCOM</string>
+    <string name="nav_header_desc">PCOM</string>
+    <string name="nav_header_title">PCOM</string>
+    <string name="nav_header_subtitle">PCOM</string>
+    <string name="navigation_drawer_open">PCOM</string>
+    <string name="navigation_drawer_close">PCOM</string>
+    <string name="weburl1">https://poc.allgonpest.com.au/pcom/getstation.ashx</string>
+    <string name="weburl2">https://poc.allgonpest.com.au/pcom/getuser.ashx</string>
+    <string name="weburl3">https://poc.allgonpest.com.au/pcom/getsitetype.ashx</string>
+    <string name="weburl4">https://poc.allgonpest.com.au/pcom/getsite.ashx</string>
+    <string name="weburl5">https://poc.allgonpest.com.au/pcom/getspecies.ashx</string>
+    <string name="weburl6">https://poc.allgonpest.com.au/pcom/getproducts.ashx</string>
+    <string name="weburl7">https://poc.allgonpest.com.au/pcom/insertstation.ashx</string>
+    <string name="weburl8">https://poc.allgonpest.com.au/pcom/getstationbyid.ashx</string>
+    <string name="weburl9">https://poc.allgonpest.com.au/pcom/updatestation.ashx</string>
+    <string name="weburl10">https://poc.allgonpest.com.au/pcom/insertstationw.ashx</string>
+    <string name="weburl11">https://poc.allgonpest.com.au/pcom/updatestationw.ashx</string>
+    <string name="weburl12">https://poc.allgonpest.com.au/pcom/uploadfolder.ashx</string>
+    <string name="weburl13">https://poc.allgonpest.com.au/pcom/uploadimg.ashx</string>
+    <string name="weburl14">https://poc.allgonpest.com.au/pcom/getvisit.ashx</string>
+    <string name="weburl15">https://poc.allgonpest.com.au/pcom/getimglist.ashx</string>
+    <string name="weburl17">https://poc.allgonpest.com.au/pcom/insertpr.ashx</string>
+    <string name="weburl18">https://poc.allgonpest.com.au/pcom/insertsp.ashx</string>
+    <string name="weburl19">https://poc.allgonpest.com.au/pcom/getvisitpr.ashx</string>
+    <string name="weburl20">https://poc.allgonpest.com.au/pcom/getvisitsp.ashx</string>
+    <string name="weburl23">https://poc.allgonpest.com.au/pcom/getsitebyuid.ashx</string>
+    <string name="weburl24">https://poc.allgonpest.com.au/pcom/getsitbyus.ashx</string>
+    <string name="weburl25">https://poc.allgonpest.com.au/pcom/updatepass.ashx</string>
+    <string name="weburl26">https://poc.allgonpest.com.au/pcom/getprbyp.ashx</string>
+    <string name="weburl27">https://poc.allgonpest.com.au/pcom/getprbye.ashx</string>
+    <string name="weburl28">https://poc.allgonpest.com.au/pcom/getprbyc.ashx</string>
+    <string name="weburl29">https://poc.allgonpest.com.au/pcom/insertfeed.ashx</string>
+    <string name="weburl30">https://poc.allgonpest.com.au/pcom/insertcomp.ashx</string>
+    <string name="weburl31">https://poc.allgonpest.com.au/pcom/getcomplain.ashx</string>
+    <string name="weburl32">https://poc.allgonpest.com.au/pcom/getprbyall.ashx</string>
+    <string name="weburl33">https://poc.allgonpest.com.au/pcom/getunit.ashx</string>
+    <string name="weburl16">https://poc.allgonpest.com.au/Asset/images/visit</string>
+    <string name="weburl22">https://poc.allgonpest.com.au/Asset/images/species</string>
+    <string name="weburl34">https://poc.allgonpest.com.au/mobile/getver.ashx</string>
+    <string name="weburl35">9</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Settings</string>
+    <string name="action_play_next">Settings</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="gps_network_not_enabled">Enable Location</string>
+    <string name="open_location_settings">Go to Settings</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

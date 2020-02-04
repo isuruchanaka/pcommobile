@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="50dp"
+        card_view:cardBackgroundColor="@color/background"
+        card_view:cardCornerRadius="@dimen/card_album_radius"
+        card_view:cardElevation="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ln1"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#9C27B0"
+                        android:divider="@drawable/divider"
+                        android:dividerPadding="25dp"
+                        android:orientation="horizontal"
+                        android:showDividers="middle"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@id/saddress"></LinearLayout>
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/design_default_color_primary"
+                        android:gravity="center"
+                        android:text="Station"
+                        android:textStyle="bold"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="24dp" />
+
+                    <TextView
+                        android:id="@+id/descp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingTop="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:textColor="@color/album_title"
+                        android:textSize="@dimen/album_title"
+
+                        android:textStyle="bold"
+                        card_view:layout_constraintTop_toBottomOf="@id/textView" />
+
+                    <TextView
+                        android:id="@+id/states"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/descp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:paddingBottom="@dimen/songs_count_padding_bottom"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/songs_count"
+                        card_view:layout_constraintTop_toBottomOf="@id/descp" />
+
+                    <TextView
+                        android:id="@+id/suburbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/states"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:paddingBottom="@dimen/songs_count_padding_bottom"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/songs_count"
+                        card_view:layout_constraintTop_toBottomOf="@id/states" />
+
+
+                    <TextView
+                        android:id="@+id/saddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/suburbs"
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:paddingBottom="@dimen/songs_count_padding_bottom"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/songs_count"
+                        card_view:layout_constraintTop_toBottomOf="@id/suburbs" />
+                    <ExpandableListView
+                        android:id="@+id/lvExp"
+                        android:layout_height="match_parent"
+                        card_view:layout_constraintTop_toBottomOf="@id/saddress"
+                        android:layout_width="match_parent"/>
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@id/lvExp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

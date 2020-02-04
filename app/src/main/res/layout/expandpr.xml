@@ -1,0 +1,103 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="50dp"
+    card_view:cardBackgroundColor="@color/background"
+    card_view:cardCornerRadius="@dimen/card_album_radius"
+    card_view:cardElevation="50dp">
+
+
+    <!--My dropdown Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+
+            <TextView
+                android:id="@+id/spdesc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center"
+                android:text="Species"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                card_view:layout_constraintTop_toBottomOf="parent"
+                tools:layout_editor_absoluteX="24dp" />
+
+
+            <!--My dropdown Button -->
+            <RelativeLayout
+                android:id="@+id/exbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="end"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:background="@drawable/squareds" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rmvbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/minus" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/expandableLayout2"
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/prduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/visitd"
+
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title"
+
+
+                card_view:layout_constraintTop_toBottomOf="parent" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

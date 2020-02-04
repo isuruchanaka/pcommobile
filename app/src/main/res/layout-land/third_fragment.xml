@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <AutoCompleteTextView
+            android:id="@+id/state"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border"
+            android:hint="Search Sites"
+            android:inputType="text"
+
+            android:singleLine="true"
+            android:textColor="#000DFF"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/calc_clear_txt_Prise"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+
+            app:backgroundTint="@color/colorAccent1"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="@+id/state"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:rippleColor="@color/background"
+            app:srcCompat="@drawable/close"
+            app:useCompatPadding="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_dialog_dialer"
+        app:backgroundTint="@color/background"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="30dp"
+        app:tint="@color/button_background_color" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapView"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+
+        android:text="All Sites"
+
+
+        android:textColor="#000DFF"
+        android:textColorHighlight="#00000000"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl1"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
